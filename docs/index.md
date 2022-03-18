@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Static react widget poc
 
 <script src="https://clever-bhabha-5ffaf6.netlify.app/index.js"></script>
 
