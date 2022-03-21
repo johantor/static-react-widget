@@ -6,7 +6,7 @@ import { Text } from "./Fact.styled";
 function App() {
     const [catFact, getCatFact] = useState("");
 
-    const url = "catfact.json";
+    const url = "/public/catfact.json";
 
     useEffect(() => {
         fetchFact();
