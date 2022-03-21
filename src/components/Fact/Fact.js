@@ -1,23 +1,25 @@
-import React, { useEffect, useState } from "react";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
+
+import { Text } from "./Fact.styled";
 
 function App() {
-  const [catFact, getCatFact] = useState("");
+    const [catFact, getCatFact] = useState("");
 
-  const url = "catfact.json";
+    const url = "catfact.json";
 
-  useEffect(() => {
-    fetchFact();
-  }, []);
+    useEffect(() => {
+        fetchFact();
+    }, []);
 
-  const fetchFact = () => {
-    axios.get(url).then((response) => {
-      const fact = response.data.fact;
-      getCatFact(fact);
-    });
-  };
+    const fetchFact = () => {
+        axios.get(url).then((response) => {
+            const fact = response.data.fact;
+            getCatFact(fact);
+        });
+    };
 
-  return <h1>{catFact}</h1>;
+    return <Text>{catFact}</Text>;
 }
 
 export default App;
