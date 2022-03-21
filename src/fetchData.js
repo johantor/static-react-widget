@@ -4,11 +4,11 @@ const URL = "https://catfact.ninja/fact";
 const file = "./public/catfact.json";
 
 axios
-  .get(URL)
-  .then((response) => {
-    response.data.time = new Date();
-    fs.outputFile(file, JSON.stringify(response.data));
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+    .get(URL)
+    .then((response) => {
+        response.data.time = new Date();
+        fs.outputFile(file, JSON.stringify(response.data));
+    })
+    .catch((_err) => {
+        //console.log(err);
+    });
