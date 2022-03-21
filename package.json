@@ -38,9 +38,10 @@
         "eslint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
         "lint:fix": "npm run eslint:fix && npm run stylelint",
         "stylelint": "stylelint \"src/**/*.{js,ts}\"",
-        "dev": "npm start",
-        "start": "node ./src/fetchData.js && react-scripts start",
-        "build": "node ./src/fetchData.js && parcel build src/index.js --no-source-maps -d build/",
+        "dev": "npm run start",
+        "fetch": "node ./src/fetchData.js",
+        "start": "npm run fetch && react-scripts start",
+        "build": "npm run fetch && parcel build src/index.js --no-source-maps -d public/",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
