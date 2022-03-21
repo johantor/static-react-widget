@@ -12,6 +12,7 @@
 public/*
 !public/index.html
 !public/robots.txt
+src/data
 
 # production
 /build
