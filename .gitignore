@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# public data
+/public/catfact.json
+
 # production
 /build
 
