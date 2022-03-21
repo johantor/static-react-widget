@@ -1,0 +1,11 @@
+build/**
+mock/**
+config/**
+scripts/**
+node_modules/**
+public/**
+coverage/**
+**/__tests__/**
+src/serviceWorker.js
+typings/react-app-env.d.ts
+jest.config.js
