@@ -9,7 +9,9 @@
 /coverage
 
 # public data
-/public/catfact.json
+public/*
+!public/index.html
+!public/robots.txt
 
 # production
 /build

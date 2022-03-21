@@ -1,9 +1,7 @@
 const axios = require("axios");
 const fs = require("fs-extra");
 const URL = "https://catfact.ninja/fact";
-const environment = process.env.NODE_ENV || "development";
-const buildDir = environment === "development" ? "public" : "build";
-const file = `${buildDir}/catfact.json`;
+const file = `public/catfact.json`;
 
 axios
     .get(URL)
