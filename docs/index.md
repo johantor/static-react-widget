@@ -12,4 +12,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consequat augue te
 
 <div class="pocwidget"></div>
 
-<script src="https://clever-bhabha-5ffaf6.netlify.app/index.js"></script>
+<script src="https://623859328740ac00080a87d0--clever-bhabha-5ffaf6.netlify.app/index.js"></script>
