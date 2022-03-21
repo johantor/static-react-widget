@@ -8,6 +8,12 @@ axios
     .then((response) => {
         response.data.time = new Date();
         fs.outputFile(file, JSON.stringify(response.data));
+        console.log(
+            "Writing data to file (",
+            file,
+            "): ",
+            JSON.stringify(response.data)
+        );
     })
     .catch((_err) => {
         //console.log(err);
